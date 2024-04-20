@@ -1,0 +1,78 @@
+<div class="h1-faq-area">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="block">
+                    <div class="small-ico d-flex">
+                        <img src="assets/image/small-ico.png" class="small-ico-img" alt="">
+                        <div class="technicals">
+                            <h4>Request</h4>
+                            <h3>A Quote</h3>
+                        </div>
+                    </div>
+                    <div class="quote-content">
+                        <p> <span class="activeColor">For Business:</span> For Business inquiry fill our feedback form
+                            and Troll Free Number - (+91) 00-700-6202, our team will help you with in 24 hours.</p>
+                    </div>
+                    <div class="h1-quote-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-0 mb-3" placeholder="Your Name">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="email" class="form-control rounded-0 mb-3" placeholder="Email Address">
+                                </div>
+                                <div class="col-12 ">
+                                    <select id="inputState" class="form-control select-service rounded-0 mb-3">
+
+                                        <option selected="" class="ser">Select Services</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control rounded-0 mb-3" rows="4"
+                                        placeholder="Other Requirement"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn bet w-100">Get a Quote</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-6 pw">
+                <div class="block">
+                    <div class="small-ico d-flex">
+                        <img src="assets/image/small-ico.png" class="small-ico-img" alt="">
+                        <div class="technicals">
+                            <h4>General</h4>
+                            <h3>Questions</h3>
+                        </div>
+                    </div>
+                    <div class="h1-accordion" id="accordionExample">
+                       
+                        <mat-accordion class="o">
+                            <mat-expansion-panel *ngFor="let panel of panels; let i = index"
+                            (click)="togglePanel(i)" >
+
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title class="O">
+                                        <span class="icons"  [ngClass]="{ 'active': activePanel === i } "
+                                        class="matroic"> <mat-icon class="ad">add</mat-icon></span>
+                                        <p class="heade ">{{ panel.title }}</p>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <p *ngIf="activePanel === i"> {{ panel.content }}</p>
+                            </mat-expansion-panel>
+                        </mat-accordion>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

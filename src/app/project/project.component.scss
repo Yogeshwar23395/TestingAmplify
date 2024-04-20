@@ -1,0 +1,86 @@
+.project-section{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.small-ico{
+  margin-bottom: 15px;
+}
+.small-ico-img {
+    position: relative;
+    width: 55px;
+    height: 66px;
+  }
+  .ico-inspiring {
+    margin-left: 10px;
+  
+    h4 {
+      font-size: 24px;
+      color: orangered;
+      font-weight: 400;
+    }
+  
+    h3 {
+      font-size: 36px;
+      font-weight: 600;
+    }
+  }
+
+  .example-card {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+
+  .project-image{
+    height: 20rem;
+    width: 100%;
+    display: block;
+    transition: filter 0.3s;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); 
+    opacity: 0;
+    transition: opacity 0.3s; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    color: white; /* Text color */
+}
+
+.image-container:hover .overlay {
+    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+  .mat-mdc-card{
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  .mat-mdc-card-header{
+    display: flex;
+    padding: 25px 16px 0;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  
+  ::ng-deep .mat-mdc-tab-body-content {
+    overflow: hidden !important;
+  }
+

@@ -1,0 +1,163 @@
+// banner section
+
+.banner-title {
+  font-size: 60px;
+}
+.banner-description {
+  font-size: 16px;
+  margin-top: 2rem;
+  line-height: 1.8;
+  font-family: re;
+}
+
+.btn-title {
+  width: 135px;
+  height: 41px;
+}
+.btn-title1 {
+  width: 115px;
+  height: 41px;
+  margin-left: 10px;
+  border: 2px solid orangered !important;
+  color: #fff;
+}
+
+.carousel-indicators {
+  margin-bottom: 0.5rem !important;
+}
+.caption1 {
+  position: absolute;
+  right: 15%;
+  bottom: 13.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: left;
+  width: 50%;
+}
+.caption2 {
+  position: absolute;
+  right: 15%;
+  bottom: 13.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+.caption3 {
+  position: absolute;
+  right: 15%;
+  bottom: 13.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: right;
+  margin-left: 15%;
+}
+
+// ::ng-deep .mat-mdc-outlined-button:not(:disabled) {
+//   border-color: orangered;
+// }
+
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .banner-info {
+    text-align: left;
+  }
+  .banner-description {
+    font-size: 14px;
+    margin-top: 0rem;
+    line-height: 1.5;
+    font-family: re;
+    margin-bottom: 10px;
+  }
+
+  .btn-title {
+    width: 150px;
+    height: 35px;
+    margin-bottom: 8px;
+  }
+  .btn-title1 {
+    width: 128px;
+    height: 35px;
+    margin-left: 10px;
+    border: 2px solid orangered;
+    color: #fff;
+  }
+
+  .banner-title {
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 0.5rem !important;
+  }
+
+  #carouselId {
+    height: 25rem;
+  }
+
+  .banner-img {
+    height: 25rem;
+  }
+  .button {
+    display: flex;
+  }
+  .caption1 {
+    bottom: 3.5rem;
+    width: 70%;
+}
+  .caption2 {
+    bottom: 3.5rem;
+}
+.caption3 {
+  bottom: 3.5rem;
+  margin-left: 0px;
+}
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .banner-description {
+    font-size: 16px;
+    margin-top: 1rem;
+    line-height: 1.8;
+    font-family: re;
+  }
+
+  .banner-title {
+    font-size: 45px;
+  }
+
+  .caption1 {
+    bottom: 6.25rem;
+    width: 76%;
+  }
+  .caption2 {
+    bottom: 4.25rem;
+  }
+  .caption3 {
+    bottom: 5.25rem;
+    margin-left: 0%;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .caption1 {
+    bottom: 8.25rem;
+    width: 70%;
+  }
+  .caption2 {
+    bottom: 8.25rem;
+  }
+  .caption3 {
+    bottom: 8.25rem;
+    margin-left: 0%;
+  }
+}

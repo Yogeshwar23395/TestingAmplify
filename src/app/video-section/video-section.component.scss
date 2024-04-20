@@ -1,0 +1,166 @@
+// videosection
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgb(255 83 19);
+    padding: 20px;
+    border-radius: 100%;
+    width: 5%;
+  }
+  
+  .play-button {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  
+  .video-section {
+    position: relative;
+  }
+  
+  .small-ico-img {
+    position: relative;
+    width: 55px;
+    height: 66px;
+  }
+  .ico-inspiring {
+    margin-left: 10px;
+  
+    h4 {
+      font-size: 24px;
+      color: orangered;
+      font-weight: 400;
+    }
+  
+    h3 {
+      font-size: 36px;
+      font-weight: 600;
+    }
+  }
+  .inspiring {
+    padding: 10px 10px 10px 104px;
+  }
+  
+  .inspiring-para {
+    margin-top: 1rem;
+    line-height: 2;
+  }
+  .sign-para {
+    color: orangered;
+    font-weight: 400;
+  }
+  .sign-name {
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .play-icon {
+    width: 1.5rem;
+  }
+  .modal-content{
+    // padding: 10px;
+    max-width: 100%;
+    background-color: transparent;
+    border: none;
+  }
+  .modal-dialog {
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.video{
+  width: 100%;
+  height: 435px;
+}
+
+
+
+  
+@media (min-width: 320px) and (max-width: 576px) {
+  
+    .overlay {
+      top: 85%;
+      width: 19%;
+    }
+  
+    .inspiring {
+      padding: 36px 10px 10px 10px;
+    }
+    .ico-inspiring h3 {
+      font-size: 27px;
+      font-weight: 600;
+    }
+
+    .modal-dialog {
+      max-width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+    .video {
+      width: 100%;
+      height: 190px;
+  }
+  
+  }
+
+
+  
+@media (min-width: 577px) and (max-width: 991px) {
+    
+    .inspiring {
+      padding: 30px 10px 10px 10px;
+    }
+  
+    .overlay {
+      top: 74%;
+      width: 9%;
+    }
+
+    .video {
+      width: 100%;
+      height: 360px;
+  }
+
+  .modal-dialog {
+    max-width: 85% !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+    
+  }
+
+  
+@media (min-width: 992px) and (max-width: 1200px) {
+    .overlay {
+      width: 7%;
+    }
+    .ico-inspiring h3 {
+      font-size: 27px;
+      font-weight: 600;
+    }
+    .inspiring {
+        padding: 30px 10px 10px 33px;
+    }
+  
+    .video-img {
+      height: 31rem;
+    }
+
+    .modal-dialog {
+      max-width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .video{
+    width: 100%;
+    height: 445px;
+  }
+
+  }
+  

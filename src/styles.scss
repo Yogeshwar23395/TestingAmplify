@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+@font-face{
+    font-family: "Red Rose", serif;
+    src: url('../src/assets/Red_Rose/RedRose-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family:'RedRose-VariableFont_wght'; }

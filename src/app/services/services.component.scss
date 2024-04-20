@@ -1,0 +1,120 @@
+// sercives card
+
+.small-ico-img {
+  position: relative;
+  width: 55px;
+  height: 66px;
+}
+.ico-inspiring {
+  margin-left: 10px;
+
+  h4 {
+    font-size: 24px;
+    color: #ff5e14;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
+
+.service-section {
+  margin-top: 2rem;
+}
+.card-section {
+  padding-bottom: 26px;
+}
+.example-card {
+  max-width: 400px;
+  border-radius: 0px;
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.example-card img.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s;
+}
+.example-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.example-card:hover .background-border {
+  border-top-color: #ff5e14;
+}
+
+.service-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-border {
+  position: absolute;
+  top: 0;
+  left: 75%;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #061538;
+  border-left: 100px solid transparent;
+}
+
+.top-right-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.top-right-image {
+  position: relative;
+  width: 1.5rem;
+  top: 18px;
+  right: 18px;
+}
+
+.title-service {
+  font-size: 24px;
+  font-weight: 400;
+}
+.title-service-para {
+  line-height: 1.5;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+::ng-deep.mat-mdc-card-content:last-child {
+  padding: 12px 20px 16px 20px;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+  // service-card
+  .background-border {
+    left: 75%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  // service-card
+  .background-border {
+    left: 70.8%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  // service-card
+  .background-border {
+    left: 66.8%;
+  }
+  .title-service {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+}

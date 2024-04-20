@@ -1,0 +1,33 @@
+.call-to-action {
+    padding: 96px 0px 82px;
+}
+
+.call-to-action {
+    background-image: url(../../assets/image/purchase-img.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.call_left {
+    margin-bottom: 15px;
+}
+
+.call_left h2 {
+    font-size: 36px;
+    line-height: 40px;
+    display: inline;
+    font-family: sans-serif;
+}
+
+.hoverbtn:hover {
+    background: #0a0a92;
+}
+
+.fute {
+    visibility: visible;
+    animation-duration: 1500ms;
+    animation-delay: 100ms;
+    animation-name: fadeInUp;
+}

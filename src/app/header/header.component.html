@@ -1,0 +1,86 @@
+<div class="container-flex contact-info">
+  <div class="container">
+    <div class="row justify-content-center align-items-center g-2">
+      <div class="col-lg-3 col-sm-12">
+        <span class="phone">
+          <mat-icon class="contact-icon">phone</mat-icon> Phone: +123456789
+        </span>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <span class="email">
+          <mat-icon class="contact-icon">email</mat-icon> Email: exampleexample.com
+        </span>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <span class="opening-hours">
+          <mat-icon class="contact-icon">access_time</mat-icon> Opening Hours: 9:00 AM - 6:00 PM
+        </span>
+      </div>
+      <div class="col-lg-2 col-sm-12">
+        <span class="social-icons">
+          <a href="#" target="_blank"><img src="assets/image/facebook.svg" class="icon" alt=""></a>
+          <a href="#" target="_blank"><img src="assets/image/instagram.svg" class="icon" alt=""></a>
+          <a href="#" target="_blank"><img src="assets/image/x-twitter.svg" class="icon" alt=""></a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-flex navbar">
+  <div class="container">
+    <mat-toolbar class="navbar">
+      <span>
+        <img src="assets/image/logo.png" alt="log" class="logo-img">
+      </span>
+      <!-- <span class="example-spacer"></span> -->
+      <div class="navbar-menu">
+        <button mat-button routerLink="/">Home</button>
+        <button mat-button routerLink="/about">About</button>
+        <button mat-button routerLink="/service">Services</button>
+        <button mat-button routerLink="/project">Projects</button>
+        <button mat-button routerLink="/contact">Contact</button>
+      </div>
+      <!-- <span class="example-spacer"></span> -->
+      <div class="navbar-btn">
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Favorite">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Share">
+          <mat-icon>share</mat-icon>
+        </button>
+      </div>
+      <button id="menu-button" mat-icon-button (click)="sidenav.toggle()" aria-label="Menu">
+        <mat-icon id="menu-button">menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav class="slidenavbar" [fixedInViewport]="true" fixedTopGap="0" fixedBottomGap="0" mode="side"
+        position="start">
+        <div class="sidenavitems">
+          <div>
+            <a mat-button routerLink="/home" (click)="sidenav.close()" class="side-menu-item"><mat-icon>home</mat-icon>
+              Home</a>
+          </div>
+          <div>
+            <a mat-button routerLink="/about" (click)="sidenav.close()"
+              class="side-menu-item"><mat-icon>people</mat-icon> About</a>
+          </div>
+          <div>
+            <a mat-button routerLink="/service" (click)="sidenav.close()"
+              class="side-menu-item"><mat-icon>service</mat-icon> Service</a>
+          </div>
+          <div>
+            <a mat-button routerLink="/project" (click)="sidenav.close()"
+              class="side-menu-item"><mat-icon>service</mat-icon> Projects</a>
+          </div>
+          <div>
+            <a mat-button routerLink="/contact" (click)="sidenav.close()"
+              class="side-menu-item"><mat-icon>contact</mat-icon> Contact</a>
+          </div>
+        </div>
+      </mat-sidenav>
+    </mat-sidenav-container>
+  </div>
+</div>

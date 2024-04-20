@@ -1,0 +1,55 @@
+<div class="blog-section">
+    <div class="container">
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col">
+                <div class="small-ico d-flex">
+                    <img src="assets/image/small-ico.png" class="small-ico-img" alt="" />
+                    <div class="ico-inspiring">
+                        <h4>Latest News</h4>
+                        <h3>From Blog</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center g-2">
+            <div class="col">
+                <div>
+                    <owl-carousel-o [options]="customOptions">
+                        <ng-container *ngFor="let blog of blogs">
+                            <ng-template carouselSlide>
+                                <div class="blog">
+                                    <div class="blog-content">
+                                        <div class="author-date">{{ blog.name }} | {{ blog.date }}</div>
+                                        <div class="blog-title">{{ blog.title }}</div>
+                                        <div class="blog-description">{{ blog.description }}</div>
+                                    </div>
+                                    <div class="read-more-comments">
+                                        <a class="comments-read" href="{{ blog.readMoreLink }}">Read More</a>
+                                        <span class="comments-count">{{ blog.commentsCount }} Comments</span>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ng-container>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logo-section">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col">
+                    <div class="logo-loop">
+                        <owl-carousel-o [options]="loginImagesOptions">
+                            <ng-container *ngFor="let imageUrl of loginImageUrls">
+                                <ng-template carouselSlide>
+                                    <img [src]="imageUrl" class="logo-img" alt="Login Image">
+                                </ng-template>
+                            </ng-container>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
